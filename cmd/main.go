@@ -8,7 +8,7 @@ import (
 func main() {
   instanceFlags := flags.SetupFlags()
 
-  workersQuantity := 1
+  workersQuantity := 5
   balance := balancer.NewBalancer(workersQuantity)
 
   balance.Start(*instanceFlags.Verbose)
